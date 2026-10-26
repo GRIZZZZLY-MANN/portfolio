@@ -281,7 +281,7 @@ footer {
 	cursor: pointer;
 	order: 1;
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
 	header {
 		justify-content: space-between;
 		padding: 20px;
