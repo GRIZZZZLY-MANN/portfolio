@@ -4,17 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const observerOptions = {
 		root: null,
-		// Секция считается активной, когда она занимает 60% экрана
 		threshold: 0.4,
 	};
 
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				// Получаем id видимой секции
 				const id = entry.target.getAttribute("id");
 
-				// Удаляем класс active у всех ссылок и добавляем нужной
 				navLinks.forEach((link) => {
 					if (link.getAttribute("href") === `#${id}`) {
 						link.classList.add("active");
@@ -26,25 +23,23 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}, observerOptions);
 
-	// Запускаем слежку за каждой секцией
 	sections.forEach((section) => observer.observe(section));
 });
 const PROJECTS = [
 	{
-		slug: "mesto", // имя папки в demos/
+		slug: "mesto",
 		title: "Место SPA",
 		desc: "Сайт салона красоты: запись, отзывы, адаптив.",
 		tags: ["JS", "CSS Grid"],
-		img: "img/mesto.png", // превью (необязательно)
+		img: "img/mesto.png",
 	},
 	{
-		slug: "cars", // имя папки в demos/
+		slug: "cars",
 		title: "D&M Leasing",
 		desc: "Многостраничный сайт лизинговой компании, вёрстка и дизайн ",
 		tags: ["JS", "CSS", "Adaptive layout"],
-		img: "img/cars.png", // превью (необязательно)
+		img: "img/cars.png",
 	},
-	// ↓ новый проект = один такой объект
 ];
 const grid = document.getElementById("projects-grid");
 
@@ -67,3 +62,17 @@ grid.innerHTML = PROJECTS.map(
   </article>
 `,
 ).join("");
+
+let hamburger = document.querySelector(".hamburger");
+let nav = document.querySelector(".menu");
+
+hamburger.addEventListener("click", function (e) {
+	e.stopPropagation();
+	nav.classList.toggle("active");
+});
+
+document.addEventListener("click", function (e) {
+	if (!nav.contains(e.target)) {
+		nav.classList.remove("active");
+	}
+});
