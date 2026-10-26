@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="main.js" defer></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="container">
+					<div class="header-inner">
+						<a href="">
+							<!-- <img src="logo-main.svg" alt="logo" /> -->
+							<p>GRIZZZLY<span class="accent">.</span>site</p>
+						</a>
+						<nav class="menu">
+							<ul>
+								<li><a class="menu-link" href="#about">Обо мне</a></li>
+								<li><a class="menu-link" href="#works">Работы</a></li>
+								<li><a class="menu-link" href="#feedback">Отзывы</a></li>
+								<li><a class="menu-link" href="#contacts">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<section class="section" id="hero">
+				<div class="container" id="hero-container">
+					<h1>
+						Привет, я <span class="accent">Даня</span><br />
+						— фронтенд-разработчик
+					</h1>
+					<p>
+						Развиваюсь в сфере frontend разработки, держу уверенный курс на
+						оффер
+					</p>
+					<div class="hero-buttons">
+						<button class="btn">
+							<a href="https://github.com/GRIZZZZLY-MANN">Смотреть работы</a>
+						</button>
+						<button class="btn">
+							<a href="https://t.me/GrizZzlyMann">Связаться со мной</a>
+						</button>
+					</div>
+					<div class="hero-badges">
+						<span class="badge">⚡ HTML, CSS, JS</span>
+						<span class="badge">🤓 В процессе обучения</span>
+						<span class="badge">🟢 Открыт к проектам</span>
+					</div>
+				</div>
+			</section>
+			<section class="section" id="about">
+				<div class="container" id="container-about">
+					<article class="about-info">
+						<span class="section-label">Секция 3 · Обо мне</span>
+						<h2>Коротко обо мне</h2>
+						<div class="about-card">
+							<p class="name"><strong>Гриззли Дэн</strong></p>
+							<p>
+								<strong>Биография:</strong> Фронтенд-разработчик из Костромы.
+								Горю желанием попасть на стажировку, попробовать себя в реальной
+								работе.
+							</p>
+							<p>
+								<strong>Образование:</strong> Костромской государственный
+								университет, факультет Высшая ИТ-школа
+							</p>
+						</div>
+					</article>
+					<article class="about-tech">
+						<span class="section-label">Секция 4 · Навыки</span>
+						<h2>Стек технологий</h2>
+						<div class="about-card">
+							<div class="about-card-tech">
+								<p class="name"><strong>Уверенно использую</strong></p>
+								<span class="chip">HTML</span>
+								<span class="chip">CSS</span>
+								<span class="chip">JavaScript</span>
+							</div>
+							<div class="about-card-tech">
+								<p class="name"><strong>Активно изучаю</strong></p>
+								<span class="chip">Git</span>
+								<span class="chip">React</span>
+								<span class="chip">Adaptive Layout</span>
+							</div>
+						</div>
+
+						<!-- РЕализовать шкалу технологий?? -->
+					</article>
+				</div>
+			</section>
+			<section class="section" id="works">
+				<div class="container">
+					<span class="section-label">Секция 5 · Мои работы</span>
+					<h2>Мои работы</h2>
+					<div class="projects-grid" id="projects-grid"></div>
+				</div>
+			</section>
+			<section class="section" id="feedback">
+				<div class="container">
+					<span class="section-label">Секция 6 · Отзывы</span>
+					<p>Пока не было клиентов((</p>
+				</div>
+			</section>
+			<section class="section" id="contacts">
+				<div class="container">
+					<span class="section-label">Секция 7 · Контакты</span>
+					<div class="form-container">
+						<div class="form">
+							<form class="contact-form" action="#">
+								<input type="text" placeholder="Ваше имя" required />
+								<input type="email" placeholder="Email" required />
+								<textarea rows="4" placeholder="Пара слов о проекте"></textarea>
+								<button type="submit" class="btn btn-on-dark">Отправить</button>
+							</form>
+						</div>
+
+						<div class="panel">
+							<h3>Контакты</h3>
+							✈️ <a href="https://t.me/GrizZzlyMann">Telegram</a><br />
+							🐙 <a href="https://github.com/GRIZZZZLY-MANN">GitHub</a><br />
+							💼 Открыт для фриланса и стажировки
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				© 2026 Гриззли Дэн · Сделано на HTML/CSS как прототип. Дальше — React +
+				Next.js.
+			</footer>
+		</div>
+	</body>
+</html>

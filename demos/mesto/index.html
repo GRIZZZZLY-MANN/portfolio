@@ -1,0 +1,1565 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Место SPA — студия отдыха в Москве</title>
+		<meta
+			name="description"
+			content="Выберите SPA-программу и оставьте заявку. Перезагрузка, глубокий отдых и отдых для двоих в самом центре Москвы."
+		/>
+		<link
+			rel="icon"
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23FBF7EF' stroke='%23B99544' stroke-width='2'/%3E%3Cpath d='M16 8 L20 16 L16 24 L12 16 Z' fill='%23B99544'/%3E%3C/svg%3E"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<!-- Общие SVG-символы (звёзды для рейтинга) -->
+		<svg class="svg-defs" aria-hidden="true" focusable="false">
+			<symbol id="star-shape" viewBox="0 0 24 24">
+				<path
+					d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4 6.2 20.4l1.1-6.4L2.6 9.4l6.5-.9z"
+				/>
+			</symbol>
+			<linearGradient id="star-half" x1="0" y1="0" x2="1" y2="0">
+				<stop offset="50%" stop-color="#b99544" />
+				<stop offset="50%" stop-color="rgba(185,149,68,0.22)" />
+			</linearGradient>
+		</svg>
+
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="logo" href="#top" aria-label="Место SPA — на главную">
+					<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+						<circle
+							cx="16"
+							cy="16"
+							r="14"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.4"
+						/>
+						<circle
+							cx="16"
+							cy="16"
+							r="8"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1"
+							stroke-dasharray="2 3.2"
+						/>
+						<path d="M16 9.5 L19 16 L16 22.5 L13 16 Z" fill="currentColor" />
+					</svg>
+					<span>Место&nbsp;SPA</span>
+				</a>
+				<a class="header-cta" href="#booking">Записаться</a>
+			</div>
+		</header>
+
+		<main id="top">
+			<!-- Первый экран -->
+			<section class="hero">
+				<svg class="hero-ornament" viewBox="0 0 400 400" aria-hidden="true">
+					<g fill="none" stroke="#B99544" stroke-width="1">
+						<circle cx="200" cy="200" r="70" />
+						<circle cx="200" cy="200" r="110" stroke-dasharray="3 9" />
+						<circle cx="200" cy="200" r="150" />
+						<circle
+							cx="200"
+							cy="200"
+							r="185"
+							stroke-dasharray="1.5 12"
+							stroke-linecap="round"
+							stroke-width="3"
+						/>
+					</g>
+				</svg>
+
+				<div class="container hero-inner">
+					<p class="kicker">Студия отдыха · Москва</p>
+					<h1>
+						Выдохните.<br /><span class="gold-text">Неделя закончилась.</span>
+					</h1>
+					<p class="hero-sub">
+						«Место&nbsp;SPA» — студия, в которой из рабочего режима переходят в
+						режим покоя. Выберите программу — остальное сделаем мы.
+					</p>
+					<a class="btn btn-primary btn-lg" href="#booking">Оставить заявку</a>
+
+					<svg class="flourish" viewBox="0 0 260 20" aria-hidden="true">
+						<path
+							d="M10 10 H100 M160 10 H250"
+							stroke="currentColor"
+							stroke-width="1"
+						/>
+						<path
+							d="M100 10 c8 0 10 -5 18 -5 M160 10 c-8 0 -10 -5 -18 -5 M100 10 c8 0 10 5 18 5 M160 10 c-8 0 -10 5 -18 5"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1"
+						/>
+						<path
+							d="M130 3 L136.5 10 L130 17 L123.5 10 Z"
+							fill="currentColor"
+						/>
+					</svg>
+				</div>
+			</section>
+
+			<!-- Программы -->
+			<section class="programs" id="programs">
+				<div class="container">
+					<div class="section-head">
+						<h2>Три способа отдохнуть</h2>
+						<p>
+							Все программы — в мягком свете, тишине и с ароматными маслами.
+							Различается только длительность и настроение.
+						</p>
+					</div>
+
+					<div class="cards">
+						<article class="card">
+							<svg class="card-corner" viewBox="0 0 64 64" aria-hidden="true">
+								<path
+									d="M64 4 C44 8 22 18 10 40"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1.2"
+								/>
+								<path
+									d="M64 16 C50 20 36 28 28 42"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1"
+									stroke-dasharray="2 4"
+								/>
+								<circle cx="10" cy="40" r="2.2" fill="currentColor" />
+							</svg>
+							<h3 class="card-title">Перезагрузка</h3>
+							<p class="card-desc">
+								Час — и мысли становятся тише, а тело легче. Ароматные масла,
+								мягкие техники и чай после.
+							</p>
+							<div class="card-meta">
+								<span class="pill">60 минут</span>
+								<span class="price">3&nbsp;500&nbsp;₽</span>
+							</div>
+							<button
+								class="btn btn-outline"
+								type="button"
+								data-program="restart"
+							>
+								Выбрать программу
+							</button>
+						</article>
+
+						<article class="card card-featured">
+							<span class="badge">Чаще выбирают</span>
+							<svg class="card-corner" viewBox="0 0 64 64" aria-hidden="true">
+								<path
+									d="M64 4 C44 8 22 18 10 40"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1.2"
+								/>
+								<path
+									d="M64 16 C50 20 36 28 28 42"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1"
+									stroke-dasharray="2 4"
+								/>
+								<circle cx="10" cy="40" r="2.2" fill="currentColor" />
+							</svg>
+							<h3 class="card-title">Глубокий отдых</h3>
+							<p class="card-desc">
+								Для тех, кому нужно отключиться по-настоящему. Долгие тёплые
+								движения, тишина и целительный полусон.
+							</p>
+							<div class="card-meta">
+								<span class="pill">90 минут</span>
+								<span class="price">5&nbsp;000&nbsp;₽</span>
+							</div>
+							<button class="btn btn-primary" type="button" data-program="deep">
+								Выбрать программу
+							</button>
+						</article>
+
+						<article class="card">
+							<svg class="card-corner" viewBox="0 0 64 64" aria-hidden="true">
+								<path
+									d="M64 4 C44 8 22 18 10 40"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1.2"
+								/>
+								<path
+									d="M64 16 C50 20 36 28 28 42"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1"
+									stroke-dasharray="2 4"
+								/>
+								<circle cx="10" cy="40" r="2.2" fill="currentColor" />
+							</svg>
+							<h3 class="card-title">Для двоих</h3>
+							<p class="card-desc">
+								Отдыхайте вместе, но параллельно: две комнаты, одно настроение.
+								Идеально как подарок для двоих.
+							</p>
+							<div class="card-meta">
+								<span class="pill">120 минут</span>
+								<span class="price">9&nbsp;000&nbsp;₽</span>
+							</div>
+							<button class="btn btn-outline" type="button" data-program="duo">
+								Выбрать программу
+							</button>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Зоны студии -->
+			<section class="spaces" id="spaces">
+				<div class="container">
+					<div class="section-head">
+						<h2>Пять зон — пять настроений</h2>
+						<p>
+							Пролистайте: каждая зона уже придумала, как проведёт ваш вечер.
+						</p>
+					</div>
+
+					<div
+						class="carousel"
+						id="carousel"
+						role="region"
+						aria-roledescription="карусель"
+						aria-label="Зоны студии"
+						tabindex="0"
+					>
+						<div class="carousel-viewport" id="carousel-viewport">
+							<div class="carousel-track" id="carousel-track">
+								<figure class="slide">
+									<div class="slide-art">
+										<svg
+											viewBox="0 0 800 480"
+											role="img"
+											aria-label="Комната массажа: кушетка, свечи и тёплый свет из арочного окна"
+											preserveAspectRatio="xMidYMid slice"
+										>
+											<rect width="800" height="480" fill="#F7F0E1" />
+											<circle cx="400" cy="170" r="130" fill="#F1E3C3" />
+											<path
+												d="M332 320 V160 a68 68 0 0 1 136 0 V320 Z"
+												fill="#FBF7EF"
+												stroke="#D9BE7E"
+												stroke-width="3"
+											/>
+											<line
+												x1="400"
+												y1="96"
+												x2="400"
+												y2="320"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<line
+												x1="332"
+												y1="210"
+												x2="468"
+												y2="210"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<rect
+												x="0"
+												y="386"
+												width="800"
+												height="94"
+												fill="#EFE2C6"
+											/>
+											<rect
+												x="225"
+												y="318"
+												width="350"
+												height="44"
+												rx="22"
+												fill="#C77B6E"
+											/>
+											<rect
+												x="243"
+												y="304"
+												width="314"
+												height="24"
+												rx="12"
+												fill="#FFFDF8"
+											/>
+											<ellipse
+												cx="305"
+												cy="306"
+												rx="40"
+												ry="15"
+												fill="#F7F0E1"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<rect
+												x="255"
+												y="358"
+												width="12"
+												height="56"
+												rx="6"
+												fill="#B99544"
+											/>
+											<rect
+												x="533"
+												y="358"
+												width="12"
+												height="56"
+												rx="6"
+												fill="#B99544"
+											/>
+											<rect
+												x="588"
+												y="356"
+												width="72"
+												height="16"
+												rx="8"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<rect
+												x="594"
+												y="340"
+												width="60"
+												height="16"
+												rx="8"
+												fill="#F1E3C3"
+											/>
+											<rect
+												x="128"
+												y="330"
+												width="16"
+												height="56"
+												rx="7"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<path
+												d="M136 318 q9 -13 0 -26 q-9 13 0 26"
+												fill="#B99544"
+											/>
+											<rect
+												x="158"
+												y="346"
+												width="14"
+												height="40"
+												rx="6"
+												fill="#F1E3C3"
+											/>
+											<path
+												d="M165 336 q8 -11 0 -22 q-8 11 0 22"
+												fill="#D9BE7E"
+											/>
+											<g
+												stroke="#C9AE6E"
+												stroke-width="7"
+												stroke-linecap="round"
+												fill="none"
+											>
+												<path d="M694 314 q-26 -58 -4 -108" />
+												<path d="M694 314 q28 -52 10 -96" />
+												<path d="M694 314 q-52 -26 -66 -70" />
+											</g>
+											<path d="M668 318 h52 l-7 68 h-38 Z" fill="#C77B6E" />
+										</svg>
+									</div>
+									<figcaption>
+										<span class="zone-tag">Комната массажа</span>
+										<h3>«Тишина»</h3>
+										<p>
+											Здесь слышно только, как заканчивается неделя и начинается
+											отдых.
+										</p>
+									</figcaption>
+								</figure>
+
+								<figure class="slide">
+									<div class="slide-art">
+										<svg
+											viewBox="0 0 800 480"
+											role="img"
+											aria-label="Гидропуль с лотосом и плавающими свечами"
+											preserveAspectRatio="xMidYMid slice"
+										>
+											<rect width="800" height="480" fill="#F5EEDD" />
+											<g
+												stroke="#D9BE7E"
+												stroke-width="6"
+												fill="none"
+												stroke-linecap="round"
+												opacity="0.55"
+											>
+												<path d="M320 150 q22 -28 0 -56 q-22 -28 0 -56" />
+												<path d="M400 130 q26 -32 0 -64 q-26 -30 0 -54" />
+												<path d="M480 150 q22 -28 0 -56 q-22 -28 0 -52" />
+											</g>
+											<ellipse
+												cx="400"
+												cy="330"
+												rx="300"
+												ry="105"
+												fill="#E8DABB"
+											/>
+											<ellipse
+												cx="400"
+												cy="322"
+												rx="272"
+												ry="92"
+												fill="#CFDFD6"
+											/>
+											<g
+												stroke="#FFFDF8"
+												stroke-width="5"
+												fill="none"
+												stroke-linecap="round"
+												opacity="0.8"
+											>
+												<path d="M200 320 q30 -14 60 0 t60 0 t60 0" />
+												<path d="M360 356 q30 -14 60 0 t60 0" />
+												<path d="M470 300 q26 -12 52 0 t52 0" />
+											</g>
+											<g transform="translate(400 300)">
+												<ellipse
+													cx="0"
+													cy="12"
+													rx="54"
+													ry="13"
+													fill="#BFD3C8"
+												/>
+												<path
+													d="M0 4 C-16 -22 -8 -46 0 -54 C8 -46 16 -22 0 4"
+													fill="#C77B6E"
+												/>
+												<path
+													d="M0 4 C-30 -12 -38 -34 -34 -46 C-20 -40 -6 -20 0 4"
+													fill="#D9968A"
+												/>
+												<path
+													d="M0 4 C30 -12 38 -34 34 -46 C20 -40 6 -20 0 4"
+													fill="#D9968A"
+												/>
+												<path
+													d="M0 6 C-42 0 -56 -16 -56 -28 C-38 -26 -14 -12 0 6"
+													fill="#E6B3A6"
+												/>
+												<path
+													d="M0 6 C42 0 56 -16 56 -28 C38 -26 14 -12 0 6"
+													fill="#E6B3A6"
+												/>
+												<circle cx="0" cy="-8" r="7" fill="#B99544" />
+											</g>
+											<circle
+												cx="250"
+												cy="345"
+												r="13"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<path
+												d="M250 328 q6 -9 0 -17 q-6 8 0 17"
+												fill="#B99544"
+											/>
+											<circle
+												cx="560"
+												cy="330"
+												r="13"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<path
+												d="M560 313 q6 -9 0 -17 q-6 8 0 17"
+												fill="#B99544"
+											/>
+											<circle cx="505" cy="368" r="11" fill="#F1E3C3" />
+											<path
+												d="M505 354 q5 -8 0 -15 q-5 7 0 15"
+												fill="#D9BE7E"
+											/>
+										</svg>
+									</div>
+									<figcaption>
+										<span class="zone-tag">Гидропуль</span>
+										<h3>«Лотос»</h3>
+										<p>
+											Вода умеет то, чего не могут слова: смывает напряжение
+											лепесток за лепестком.
+										</p>
+									</figcaption>
+								</figure>
+
+								<figure class="slide">
+									<div class="slide-art">
+										<svg
+											viewBox="0 0 800 480"
+											role="img"
+											aria-label="Чайная гостиная: чайник, две чашки и полка с банками"
+											preserveAspectRatio="xMidYMid slice"
+										>
+											<rect width="800" height="480" fill="#F7F0E1" />
+											<circle cx="400" cy="200" r="140" fill="#F1E3C3" />
+											<rect
+												x="180"
+												y="150"
+												width="440"
+												height="10"
+												rx="5"
+												fill="#B99544"
+											/>
+											<rect
+												x="220"
+												y="102"
+												width="44"
+												height="48"
+												rx="8"
+												fill="#C77B6E"
+											/>
+											<rect
+												x="228"
+												y="92"
+												width="28"
+												height="12"
+												rx="6"
+												fill="#B99544"
+											/>
+											<rect
+												x="292"
+												y="112"
+												width="40"
+												height="38"
+												rx="8"
+												fill="#D9BE7E"
+											/>
+											<rect
+												x="300"
+												y="103"
+												width="24"
+												height="11"
+												rx="5"
+												fill="#A67F2E"
+											/>
+											<rect
+												x="470"
+												y="106"
+												width="42"
+												height="44"
+												rx="8"
+												fill="#E6B3A6"
+											/>
+											<rect
+												x="478"
+												y="96"
+												width="26"
+												height="12"
+												rx="6"
+												fill="#B99544"
+											/>
+											<rect
+												x="540"
+												y="116"
+												width="38"
+												height="34"
+												rx="8"
+												fill="#C9AE6E"
+											/>
+											<g
+												stroke="#D9BE7E"
+												stroke-width="5"
+												fill="none"
+												stroke-linecap="round"
+												opacity="0.6"
+											>
+												<path d="M380 232 q18 -24 0 -48 q-18 -24 0 -44" />
+												<path d="M432 240 q20 -26 0 -50" />
+											</g>
+											<g transform="translate(400 322)">
+												<ellipse cx="0" cy="0" rx="92" ry="58" fill="#C77B6E" />
+												<path
+													d="M78 -30 q46 -6 56 -42 l16 10 q-12 44 -62 52 Z"
+													fill="#A85547"
+												/>
+												<path
+													d="M-82 -34 q-44 8 -36 48 q7 33 44 34"
+													fill="none"
+													stroke="#A85547"
+													stroke-width="13"
+													stroke-linecap="round"
+												/>
+												<ellipse
+													cx="0"
+													cy="-52"
+													rx="42"
+													ry="12"
+													fill="#B99544"
+												/>
+												<circle cx="0" cy="-66" r="9" fill="#A67F2E" />
+												<ellipse
+													cx="-30"
+													cy="-10"
+													rx="26"
+													ry="14"
+													fill="#D9968A"
+													opacity="0.7"
+												/>
+											</g>
+											<rect
+												x="140"
+												y="380"
+												width="520"
+												height="16"
+												rx="8"
+												fill="#B99544"
+											/>
+											<rect
+												x="180"
+												y="396"
+												width="14"
+												height="60"
+												rx="7"
+												fill="#A67F2E"
+											/>
+											<rect
+												x="606"
+												y="396"
+												width="14"
+												height="60"
+												rx="7"
+												fill="#A67F2E"
+											/>
+											<g transform="translate(214 348)">
+												<path
+													d="M-30 0 a30 22 0 0 0 60 0 Z"
+													fill="#FFFDF8"
+													stroke="#D9BE7E"
+													stroke-width="3"
+												/>
+												<ellipse cx="0" cy="0" rx="30" ry="8" fill="#E6B3A6" />
+												<rect
+													x="-40"
+													y="24"
+													width="80"
+													height="7"
+													rx="3.5"
+													fill="#D9BE7E"
+												/>
+											</g>
+											<g transform="translate(586 348)">
+												<path
+													d="M-30 0 a30 22 0 0 0 60 0 Z"
+													fill="#FFFDF8"
+													stroke="#D9BE7E"
+													stroke-width="3"
+												/>
+												<ellipse cx="0" cy="0" rx="30" ry="8" fill="#E6B3A6" />
+												<rect
+													x="-40"
+													y="24"
+													width="80"
+													height="7"
+													rx="3.5"
+													fill="#D9BE7E"
+												/>
+											</g>
+										</svg>
+									</div>
+									<figcaption>
+										<span class="zone-tag">Чайная гостиная</span>
+										<h3>«Отдых»</h3>
+										<p>
+											После процедур — чай, тишина и никаких планов. Обещаем.
+										</p>
+									</figcaption>
+								</figure>
+
+								<figure class="slide">
+									<div class="slide-art">
+										<svg
+											viewBox="0 0 800 480"
+											role="img"
+											aria-label="Хамам: купол с огоньками, арочный проём и мраморный курна"
+											preserveAspectRatio="xMidYMid slice"
+										>
+											<rect width="800" height="480" fill="#F3EAD5" />
+											<circle cx="400" cy="230" r="180" fill="#F1E1BC" />
+											<path
+												d="M225 330 a175 175 0 0 1 350 0 Z"
+												fill="#E9D7AC"
+												stroke="#D9BE7E"
+												stroke-width="3"
+											/>
+											<g fill="#B99544">
+												<circle cx="400" cy="175" r="7" />
+												<circle cx="340" cy="205" r="5" />
+												<circle cx="460" cy="205" r="5" />
+												<circle cx="300" cy="250" r="4" />
+												<circle cx="500" cy="250" r="4" />
+											</g>
+											<path
+												d="M348 330 v-62 a52 52 0 0 1 104 0 v62 Z"
+												fill="#FBF7EF"
+												stroke="#D9BE7E"
+												stroke-width="3"
+											/>
+											<path
+												d="M400 218 v112"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<rect
+												x="0"
+												y="392"
+												width="800"
+												height="88"
+												fill="#E7D6AE"
+											/>
+											<circle cx="170" cy="250" r="7" fill="#B99544" />
+											<path
+												d="M150 256 h40 v96 a20 20 0 0 1 -40 0 Z"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="3"
+											/>
+											<circle cx="630" cy="250" r="7" fill="#B99544" />
+											<path
+												d="M610 256 h40 v96 a20 20 0 0 1 -40 0 Z"
+												fill="#F1E3C3"
+												stroke="#D9BE7E"
+												stroke-width="3"
+											/>
+											<rect
+												x="300"
+												y="336"
+												width="200"
+												height="72"
+												rx="12"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="3"
+											/>
+											<ellipse
+												cx="400"
+												cy="358"
+												rx="76"
+												ry="16"
+												fill="#CFDFD6"
+											/>
+											<rect
+												x="336"
+												y="314"
+												width="10"
+												height="26"
+												rx="5"
+												fill="#B99544"
+											/>
+											<rect
+												x="454"
+												y="314"
+												width="10"
+												height="26"
+												rx="5"
+												fill="#B99544"
+											/>
+											<circle cx="341" cy="312" r="7" fill="#A67F2E" />
+											<circle cx="459" cy="312" r="7" fill="#A67F2E" />
+											<rect
+												x="230"
+												y="364"
+												width="13"
+												height="30"
+												rx="6"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<path
+												d="M236.5 354 q7 -10 0 -20 q-7 10 0 20"
+												fill="#B99544"
+											/>
+											<rect
+												x="556"
+												y="364"
+												width="13"
+												height="30"
+												rx="6"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<path
+												d="M562.5 354 q7 -10 0 -20 q-7 10 0 20"
+												fill="#B99544"
+											/>
+										</svg>
+									</div>
+									<figcaption>
+										<span class="zone-tag">Хамам</span>
+										<h3>«Тепло»</h3>
+										<p>
+											Сорок градусов пара — и в голове остаётся только белое
+											пространство.
+										</p>
+									</figcaption>
+								</figure>
+
+								<figure class="slide">
+									<div class="slide-art">
+										<svg
+											viewBox="0 0 800 480"
+											role="img"
+											aria-label="Комната для двоих: две кушетки, свеча на столике и лепестки на полу"
+											preserveAspectRatio="xMidYMid slice"
+										>
+											<rect width="800" height="480" fill="#F6EEDD" />
+											<circle cx="400" cy="150" r="95" fill="#F1E1BC" />
+											<circle cx="400" cy="150" r="58" fill="#E9D7AC" />
+											<rect
+												x="0"
+												y="390"
+												width="800"
+												height="90"
+												fill="#EFE2C6"
+											/>
+											<rect
+												x="90"
+												y="312"
+												width="240"
+												height="42"
+												rx="21"
+												fill="#C77B6E"
+											/>
+											<rect
+												x="106"
+												y="299"
+												width="208"
+												height="22"
+												rx="11"
+												fill="#FFFDF8"
+											/>
+											<ellipse
+												cx="156"
+												cy="301"
+												rx="34"
+												ry="13"
+												fill="#F7F0E1"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<rect
+												x="118"
+												y="350"
+												width="11"
+												height="48"
+												rx="5"
+												fill="#B99544"
+											/>
+											<rect
+												x="292"
+												y="350"
+												width="11"
+												height="48"
+												rx="5"
+												fill="#B99544"
+											/>
+											<rect
+												x="470"
+												y="312"
+												width="240"
+												height="42"
+												rx="21"
+												fill="#C77B6E"
+											/>
+											<rect
+												x="486"
+												y="299"
+												width="208"
+												height="22"
+												rx="11"
+												fill="#FFFDF8"
+											/>
+											<ellipse
+												cx="644"
+												cy="301"
+												rx="34"
+												ry="13"
+												fill="#F7F0E1"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<rect
+												x="498"
+												y="350"
+												width="11"
+												height="48"
+												rx="5"
+												fill="#B99544"
+											/>
+											<rect
+												x="672"
+												y="350"
+												width="11"
+												height="48"
+												rx="5"
+												fill="#B99544"
+											/>
+											<rect
+												x="390"
+												y="302"
+												width="20"
+												height="30"
+												rx="8"
+												fill="#FFFDF8"
+												stroke="#D9BE7E"
+												stroke-width="2"
+											/>
+											<path
+												d="M400 292 q10 -15 0 -30 q-10 15 0 30"
+												fill="#B99544"
+											/>
+											<rect
+												x="368"
+												y="332"
+												width="64"
+												height="10"
+												rx="5"
+												fill="#B99544"
+											/>
+											<rect
+												x="394"
+												y="342"
+												width="12"
+												height="54"
+												rx="6"
+												fill="#A67F2E"
+											/>
+											<g fill="#D9968A">
+												<ellipse
+													cx="330"
+													cy="412"
+													rx="12"
+													ry="7"
+													transform="rotate(-18 330 412)"
+												/>
+												<ellipse
+													cx="470"
+													cy="424"
+													rx="12"
+													ry="7"
+													transform="rotate(14 470 424)"
+												/>
+												<ellipse
+													cx="410"
+													cy="438"
+													rx="11"
+													ry="6"
+													transform="rotate(-8 410 438)"
+												/>
+												<ellipse
+													cx="290"
+													cy="438"
+													rx="10"
+													ry="6"
+													transform="rotate(22 290 438)"
+												/>
+												<ellipse
+													cx="520"
+													cy="406"
+													rx="10"
+													ry="6"
+													transform="rotate(-24 520 406)"
+												/>
+											</g>
+											<g fill="#E6B3A6">
+												<ellipse cx="360" cy="432" rx="9" ry="5" />
+												<ellipse
+													cx="445"
+													cy="414"
+													rx="9"
+													ry="5"
+													transform="rotate(30 445 414)"
+												/>
+											</g>
+										</svg>
+									</div>
+									<figcaption>
+										<span class="zone-tag">Комната для двоих</span>
+										<h3>«Полуночь»</h3>
+										<p>
+											Две кушетки, одна свеча на двоих — и вечер, который вы
+											выбрали вместе.
+										</p>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<button
+							class="carousel-btn prev"
+							type="button"
+							aria-label="Предыдущая зона"
+							id="carousel-prev"
+						>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M15 5 L8 12 L15 19"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2.4"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<button
+							class="carousel-btn next"
+							type="button"
+							aria-label="Следующая зона"
+							id="carousel-next"
+						>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M9 5 L16 12 L9 19"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2.4"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<div
+							class="carousel-dots"
+							id="carousel-dots"
+							role="group"
+							aria-label="Выбор зоны"
+						></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Отзывы -->
+			<section class="reviews" id="reviews">
+				<div class="container">
+					<div class="section-head">
+						<h2>Что говорят те, кто уже выдохнул</h2>
+						<p>Впечатления гостей — от людей, а не от маркетологов.</p>
+					</div>
+
+					<div class="reviews-grid">
+						<article class="review-card">
+							<div class="review-head">
+								<svg
+									class="avatar"
+									viewBox="0 0 80 80"
+									role="img"
+									aria-label="Аватар: @spokoynaya_voda"
+								>
+									<circle cx="40" cy="40" r="40" fill="#CFDFD6" />
+									<path
+										d="M12 80c2-16 14-24 28-24s26 8 28 24z"
+										fill="#C77B6E"
+									/>
+									<rect
+										x="23"
+										y="30"
+										width="7"
+										height="21"
+										rx="3.5"
+										fill="#5B4230"
+									/>
+									<rect
+										x="50"
+										y="30"
+										width="7"
+										height="21"
+										rx="3.5"
+										fill="#5B4230"
+									/>
+									<circle cx="40" cy="34" r="15" fill="#F0D0B0" />
+									<path d="M25 34a15 15 0 0 1 30 0z" fill="#5B4230" />
+								</svg>
+								<div class="review-who">
+									<span class="review-nick">@spokoynaya_voda</span>
+									<span class="stars" role="img" aria-label="Оценка: 5 из 5">
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+									</span>
+								</div>
+							</div>
+							<p class="review-text">
+								Пришла в пятницу с мигренью, ушла в субботу с улыбкой. Про
+								«Перезагрузку» не жалею ни секунды.
+							</p>
+						</article>
+
+						<article class="review-card">
+							<div class="review-head">
+								<svg
+									class="avatar"
+									viewBox="0 0 80 80"
+									role="img"
+									aria-label="Аватар: @artyk_smirnov"
+								>
+									<circle cx="40" cy="40" r="40" fill="#F1E3C3" />
+									<path
+										d="M12 80c2-16 14-24 28-24s26 8 28 24z"
+										fill="#B99544"
+									/>
+									<circle cx="40" cy="34" r="15" fill="#D2A173" />
+									<path
+										d="M25 32a15 15 0 0 1 30 0q-4-5-15-5t-15 5z"
+										fill="#2E2A26"
+									/>
+								</svg>
+								<div class="review-who">
+									<span class="review-nick">@artyk_smirnov</span>
+									<span class="stars" role="img" aria-label="Оценка: 5 из 5">
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+									</span>
+								</div>
+							</div>
+							<p class="review-text">
+								Ходил на «Глубокий отдых». Проснулся раньше будильника — и не
+								злился. Для меня это рекорд.
+							</p>
+						</article>
+
+						<article class="review-card">
+							<div class="review-head">
+								<svg
+									class="avatar"
+									viewBox="0 0 80 80"
+									role="img"
+									aria-label="Аватар: @lena_on_cloud"
+								>
+									<circle cx="40" cy="40" r="40" fill="#F3DDD6" />
+									<path
+										d="M12 80c2-16 14-24 28-24s26 8 28 24z"
+										fill="#A85547"
+									/>
+									<circle cx="40" cy="34" r="15" fill="#F3D9C0" />
+									<path d="M25 34a15 15 0 0 1 30 0z" fill="#A67F2E" />
+									<circle cx="40" cy="15" r="6.5" fill="#A67F2E" />
+								</svg>
+								<div class="review-who">
+									<span class="review-nick">@lena_on_cloud</span>
+									<span class="stars" role="img" aria-label="Оценка: 4,5 из 5">
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star half"><use href="#star-shape" /></svg>
+									</span>
+								</div>
+							</div>
+							<p class="review-text">
+								Хамам и чай в гостиной — лучшее, что случалось с моей нервной
+								системой за месяц.
+							</p>
+						</article>
+
+						<article class="review-card">
+							<div class="review-head">
+								<svg
+									class="avatar"
+									viewBox="0 0 80 80"
+									role="img"
+									aria-label="Аватар: @dvoe_ili_nikto"
+								>
+									<circle cx="40" cy="40" r="40" fill="#EFE2C6" />
+									<path
+										d="M12 80c2-16 14-24 28-24s26 8 28 24z"
+										fill="#8FA98F"
+									/>
+									<circle cx="40" cy="34" r="15" fill="#C68B59" />
+									<path
+										d="M24 36Q24 14 40 14Q56 14 56 36Q49 28 40 28Q31 28 24 36Z"
+										fill="#D9BE7E"
+									/>
+									<circle cx="40" cy="13" r="4.5" fill="#D9BE7E" />
+								</svg>
+								<div class="review-who">
+									<span class="review-nick">@dvoe_ili_nikto</span>
+									<span class="stars" role="img" aria-label="Оценка: 5 из 5">
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+									</span>
+								</div>
+							</div>
+							<p class="review-text">
+								Брали «Для двоих» на годовщину. Впервые за год поговорили молча
+								и всё равно поняли друг друга.
+							</p>
+						</article>
+
+						<article class="review-card">
+							<div class="review-head">
+								<svg
+									class="avatar"
+									viewBox="0 0 80 80"
+									role="img"
+									aria-label="Аватар: @mr_relax"
+								>
+									<circle cx="40" cy="40" r="40" fill="#DCE4DC" />
+									<path
+										d="M12 80c2-16 14-24 28-24s26 8 28 24z"
+										fill="#6E675C"
+									/>
+									<circle cx="40" cy="34" r="15" fill="#B97F4F" />
+									<path
+										d="M29 37q11 15 22 0-1 11-11 11t-11-11z"
+										fill="#8A8378"
+									/>
+								</svg>
+								<div class="review-who">
+									<span class="review-nick">@mr_relax</span>
+									<span class="stars" role="img" aria-label="Оценка: 4 из 5">
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star"><use href="#star-shape" /></svg>
+									</span>
+								</div>
+							</div>
+							<p class="review-text">
+								Всё идеально, но будить после сеанса — преступление. Прошу зону
+								тишины без часов.
+							</p>
+						</article>
+
+						<article class="review-card">
+							<div class="review-head">
+								<svg
+									class="avatar"
+									viewBox="0 0 80 80"
+									role="img"
+									aria-label="Аватар: @kofe_ne_zhdite"
+								>
+									<circle cx="40" cy="40" r="40" fill="#F1E3C3" />
+									<path
+										d="M12 80c2-16 14-24 28-24s26 8 28 24z"
+										fill="#D9BE7E"
+									/>
+									<circle cx="40" cy="34" r="15" fill="#E5BD94" />
+									<path d="M25 34a15 15 0 0 1 30 0z" fill="#8A5A3B" />
+									<circle cx="29" cy="21" r="5.5" fill="#8A5A3B" />
+									<circle cx="40" cy="17" r="6" fill="#8A5A3B" />
+									<circle cx="51" cy="21" r="5.5" fill="#8A5A3B" />
+								</svg>
+								<div class="review-who">
+									<span class="review-nick">@kofe_ne_zhdite</span>
+									<span class="stars" role="img" aria-label="Оценка: 5 из 5">
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+										<svg class="star on"><use href="#star-shape" /></svg>
+									</span>
+								</div>
+							</div>
+							<p class="review-text">
+								После процедур принесли травяной чай. Я забыла слово «дедлайн».
+								Магия? Нет, «Место».
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Заявка -->
+			<section class="booking" id="booking">
+				<div class="container booking-inner">
+					<div class="section-head">
+						<svg
+							class="flourish flourish-sm"
+							viewBox="0 0 260 20"
+							aria-hidden="true"
+						>
+							<path
+								d="M10 10 H100 M160 10 H250"
+								stroke="currentColor"
+								stroke-width="1"
+							/>
+							<path
+								d="M130 3 L136.5 10 L130 17 L123.5 10 Z"
+								fill="currentColor"
+							/>
+						</svg>
+						<h2>Оставьте заявку</h2>
+						<p>
+							Три поля — и мы напишем, чтобы подтвердить время. Никакой спешки:
+							думать можно сколько угодно.
+						</p>
+					</div>
+
+					<form class="booking-form" id="booking-form" novalidate>
+						<div class="field">
+							<label for="field-name">Как вас зовут?</label>
+							<input
+								type="text"
+								id="field-name"
+								name="name"
+								autocomplete="name"
+								placeholder="Имя"
+								aria-describedby="error-name"
+							/>
+							<p class="field-error hidden" id="error-name" hidden></p>
+						</div>
+
+						<div class="field">
+							<label for="field-program">Программа</label>
+							<select
+								id="field-program"
+								name="program"
+								aria-describedby="error-program"
+							>
+								<option value="" selected disabled>Выберите программу</option>
+								<option value="restart">
+									Перезагрузка · 60 минут · 3&nbsp;500&nbsp;₽
+								</option>
+								<option value="deep">
+									Глубокий отдых · 90 минут · 5&nbsp;000&nbsp;₽
+								</option>
+								<option value="duo">
+									Для двоих · 120 минут · 9&nbsp;000&nbsp;₽
+								</option>
+							</select>
+							<p class="field-error hidden" id="error-program"></p>
+						</div>
+
+						<div class="field">
+							<label for="field-date">Желаемая дата</label>
+							<input
+								type="date"
+								id="field-date"
+								name="date"
+								aria-describedby="error-date"
+							/>
+							<p class="field-error hidden" id="error-date" hidden></p>
+						</div>
+
+						<button class="btn btn-primary btn-lg btn-full" type="submit">
+							Отправить заявку
+						</button>
+						<p class="form-note">
+							Демонстрация: заявка сохраняется только в вашем браузере.
+							Настоящая запись в салон не выполняется.
+						</p>
+					</form>
+
+					<noscript
+						><p class="form-note">
+							Для отправки заявки включите JavaScript.
+						</p></noscript
+					>
+
+					<div class="confirmation" id="confirmation" hidden>
+						<svg
+							class="flourish flourish-sm"
+							viewBox="0 0 260 20"
+							aria-hidden="true"
+						>
+							<path
+								d="M10 10 H100 M160 10 H250"
+								stroke="currentColor"
+								stroke-width="1"
+							/>
+							<path
+								d="M130 3 L136.5 10 L130 17 L123.5 10 Z"
+								fill="currentColor"
+							/>
+						</svg>
+						<h3>Заявка принята</h3>
+						<p class="confirmation-lead" id="confirmation-lead">
+							Мы напишем, чтобы подтвердить время. Отдыхайте уже морально.
+						</p>
+						<dl class="confirmation-details">
+							<div>
+								<dt>Имя</dt>
+								<dd id="conf-name"></dd>
+							</div>
+							<div>
+								<dt>Программа</dt>
+								<dd id="conf-program"></dd>
+							</div>
+							<div>
+								<dt>Дата</dt>
+								<dd id="conf-date"></dd>
+							</div>
+							<div>
+								<dt>Номер заявки</dt>
+								<dd id="conf-id"></dd>
+							</div>
+						</dl>
+						<button class="btn btn-outline" type="button" id="new-application">
+							Оставить новую заявку
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-grid">
+				<div class="footer-col">
+					<a
+						class="logo footer-logo"
+						href="#top"
+						aria-label="Место SPA — наверх"
+					>
+						<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+							<circle
+								cx="16"
+								cy="16"
+								r="14"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.4"
+							/>
+							<circle
+								cx="16"
+								cy="16"
+								r="8"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1"
+								stroke-dasharray="2 3.2"
+							/>
+							<path d="M16 9.5 L19 16 L16 22.5 L13 16 Z" fill="currentColor" />
+						</svg>
+						<span>Место&nbsp;SPA</span>
+					</a>
+					<p class="footer-addr">
+						Москва, ул. Тишины, 7<br />
+						ежедневно 10:00–22:00
+					</p>
+					<p class="footer-contacts">
+						<a href="tel:+74950000000">+7 495 000-00-00</a><br />
+						<a href="mailto:hello@mestospa.ru">hello@mestospa.ru</a>
+					</p>
+				</div>
+
+				<div class="footer-col footer-col-map">
+					<h3>Как нас найти</h3>
+					<div class="footer-map">
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?ll=37.615575%2C55.752141&amp;z=13"
+							title="Карта: студия «Место SPA», Москва, ул. Тишины, 7"
+							loading="lazy"
+							allowfullscreen
+						></iframe>
+					</div>
+					<a
+						class="footer-map-link"
+						href="https://yandex.ru/maps/?ll=37.615575,55.752141&z=13"
+						target="_blank"
+						rel="noopener"
+						>Открыть в Яндекс&nbsp;Картах&nbsp;↗</a
+					>
+				</div>
+
+				<div class="footer-col footer-col-social">
+					<h3>Мы на связи</h3>
+					<p class="footer-social-note">Пишите — отвечаем даже из хамама.</p>
+					<div class="social-links">
+						<a
+							class="social-link social-tg"
+							href="https://t.me/mestospa"
+							target="_blank"
+							rel="noopener"
+							aria-label="Telegram: @mestospa"
+							title="Telegram"
+						>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M21.6 3.9 2.7 11.2c-.9.3-.8 1.6.1 1.8l4.9 1.4 1.7 5.1c.3.8 1.4 1 1.9.3l2.4-3.3 4.6 3.4c.6.5 1.6.2 1.8-.6l3.7-14.7c.2-.9-.6-1.6-1.4-1.3z"
+									fill="currentColor"
+								/>
+								<path
+									d="M8.1 14.9 18.9 7.7 11.6 16.2z"
+									fill="rgba(0,0,0,0.18)"
+								/>
+							</svg>
+						</a>
+						<a
+							class="social-link social-max"
+							href="https://max.ru/mestospa"
+							target="_blank"
+							rel="noopener"
+							aria-label="Max: @mestospa"
+							title="Max"
+						>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M6.5 17V9.2c0-1.3 1.5-2 2.4-1.1L12 11.4l3.1-3.3c.9-1 2.4-.3 2.4 1.1V17"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2.6"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+						<a
+							class="social-link social-vk"
+							href="https://vk.com/mestospa"
+							target="_blank"
+							rel="noopener"
+							aria-label="ВКонтакте: vk.com/mestospa"
+							title="ВКонтакте"
+						>
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M4.5 8.5 8 15l3.5-6.5M14.5 8.5v6.5m0-3.6 3.4-2.9m-2.9 2.4 3.5 4.1"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2.2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="container footer-bottom">
+				<p class="footer-note">
+					Учебный проект. Адрес, телефон и соцсети вымышленные — всё, что вы
+					видите здесь, существует только на этой странице.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
