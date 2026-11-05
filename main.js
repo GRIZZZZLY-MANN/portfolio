@@ -40,6 +40,13 @@ const PROJECTS = [
 		tags: ["JS", "CSS", "Adaptive layout"],
 		img: "img/cars.png",
 	},
+	{
+		slug: "sedona",
+		title: "Sedona Tour",
+		desc: "Лендинг туристического сайта, без адаптива и мобильной версии",
+		tags: ["JS", "CSS"],
+		img: "img/sedona.png",
+	},
 ];
 const grid = document.getElementById("projects-grid");
 
